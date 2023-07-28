@@ -17,16 +17,16 @@ const DynamicBackgroundScreen_2: React.FC = () => {
 
         if (currentHour >= 6 && currentHour < 12) {
             // Morning (6:00 AM - 11:59 AM)
-            newBackgroundColor = '#FAF3F0';
+            newBackgroundColor = '#FAF3F0'; //米色
         } else if (currentHour >= 12 && currentHour < 18) {
             // Afternoon (12:00 PM - 5:59 PM)
-            newBackgroundColor = '#D4E2D4';
+            newBackgroundColor = '#D4E2D4'; //绿色
         } else if (currentHour >= 18 && currentHour < 22) {
             // Evening (6:00 PM - 9:59 PM)
-            newBackgroundColor = '#FFCACC';
+            newBackgroundColor = '#FFCACC'; //粉色
         } else {
             // Night (10:00 PM - 5:59 AM)
-            newBackgroundColor = '#DBC4F0';
+            newBackgroundColor = '#DBC4F0'; //紫色
         }
 
         setBackgroundColor(newBackgroundColor);
